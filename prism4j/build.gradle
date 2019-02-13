@@ -7,7 +7,7 @@ sourceSets {
 }
 
 dependencies {
-    api SUPPORT_ANNOTATIONS
+    api ANDROIDX_ANNOTATIONS
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_7

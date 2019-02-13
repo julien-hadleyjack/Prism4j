@@ -1,6 +1,6 @@
 package ru.noties.prism4j.bundler;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class ClassInfo {
 

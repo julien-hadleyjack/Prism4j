@@ -24,8 +24,7 @@ task wrapper(type: Wrapper) {
 
 ext {
 
-    final def supportVersion = '27.1.1'
-    SUPPORT_ANNOTATIONS = "com.android.support:support-annotations:$supportVersion"
+    ANDROIDX_ANNOTATIONS = "androidx.annotation:annotation:1.0.1"
 
     IX_JAVA = 'com.github.akarnokd:ixjava:1.0.0'
     COMMONS_IO = 'commons-io:commons-io:2.6'

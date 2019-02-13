@@ -1,6 +1,6 @@
 package ru.noties.prism4j;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class TextImpl implements Prism4j.Text {
 

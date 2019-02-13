@@ -1,6 +1,6 @@
 package ru.noties.prism4j.languages;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import ru.noties.prism4j.Prism4j;
 

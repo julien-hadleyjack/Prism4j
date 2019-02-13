@@ -1,6 +1,6 @@
 package ru.noties.prism4j.bundler;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.googlejavaformat.java.Formatter;
 import com.google.googlejavaformat.java.FormatterException;
