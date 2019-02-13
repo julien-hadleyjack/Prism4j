@@ -1,5 +1,7 @@
 apply plugin: 'java-library'
+apply plugin: 'maven'
 
+group = 'com.github.julien-hadleyjack'
 version = VERSION_NAME
 
 sourceSets {
@@ -22,4 +24,19 @@ if (project.hasProperty('release')) {
         ext.RELEASE_REPOSITORY_URL = LOCAL_MAVEN_URL
     }
     apply from: 'https://raw.githubusercontent.com/noties/gradle-mvn-push/master/gradle-mvn-push-jar.gradle'
+}
+
+task sourcesJar(type: Jar, dependsOn:classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn:javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
 }
